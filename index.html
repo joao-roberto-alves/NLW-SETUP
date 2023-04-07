@@ -17,51 +17,23 @@
     <header>
       <img src="./Assets/logo.svg" alt="logo da página" />
       <button>
-        <img src="./Assets/plus.svg" alt="icone sinal de mais roxo" /> Registrar
-        o meu dia
+        <img src="./Assets/plus.svg" alt="icone sinal de mais roxo" />
+        <div>Registrar o meu dia</div>
       </button>
     </header>
-    <form>
+    <form id="form-habits">
       <div class="habits">
-        <div class="habit">🏃‍♂️</div>
-        <div class="habit">💧</div>
-        <div class="habit">🍎</div>
-        <div class="habit">📚</div>
-        <div class="habit">🎮</div>
-        <div class="habit">💪</div>
+        <div class="habit" data-name="run">🏃‍♂️</div>
+        <div class="habit" data-name="water">💧</div>
+        <div class="habit" data-name="food">🍎</div>
+        <div class="habit" data-name="learn">📚</div>
+        <div class="habit" data-name="game">🎮</div>
+        <div class="habit" data-name="gym">💪</div>
       </div>
 
-      <div class="days">
-        <div class="day">
-          <div>03/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-          <input type="checkbox" name="study" />
-          <input type="checkbox" name="game" />
-          <input type="checkbox" name="gym" />
-        </div>
-
-        <div class="day">
-          <div>04/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-          <input type="checkbox" name="study" />
-          <input type="checkbox" name="game" />
-          <input type="checkbox" name="gym" />
-        </div>
-
-        <div class="day">
-          <div>05/01</div>
-          <input type="checkbox" name="run" />
-          <input type="checkbox" name="water" />
-          <input type="checkbox" name="food" />
-          <input type="checkbox" name="study" />
-          <input type="checkbox" name="game" />
-          <input type="checkbox" name="gym" />
-        </div>
-      </div>
+      <div class="days"></div>
     </form>
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
